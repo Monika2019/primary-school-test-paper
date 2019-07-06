@@ -44,33 +44,33 @@ for row in range(1,21):
         op = random.randint(1, 4)
 
         if op == 1:
-            line1 = line1 + "%d + %d = \t" % (a,b)
+            line1 = line1 + "%02d + %02d= \t" % (a,b)
             # print(line1)
             c = a + b
-            line2 = line2 + "%d + %d = %d \t" % (a,b,c )
+            line2 = line2 + "%02d + %02d = %02d \t" % (a,b,c )
 
         if op == 2:
-            line1 = line1 + "%d - %d = \t" % (a,b)
+            line1 = line1 + "%02d - %02d = \t" % (a,b)
             # print(line1)
             c = a - b
-            line2 = line2 + "%d - %d = %d \t" % (a,b,c )
+            line2 = line2 + "%02d - %02d = %02d \t" % (a,b,c )
 
         if op == 3:
-            line1 = line1 + "%d × %d = \t" % (a,b)
+            line1 = line1 + "%02d × %02d = \t" % (a,b)
             # print(line1
             c = a * b
-            line2 = line2 + "%d × %d = %d \t" % (a,b,c )
+            line2 = line2 + "%02d × %02d = %02d \t" % (a,b,c )
 
         if op == 4:
-            line1 = line1 + "%d ÷ %d = \t" % (a,b)
+            line1 = line1 + "%02d ÷ %002d = \t" % (a,b)
             c = a / b
-            line2 = line2 + "%d ÷ %d = %d \t" % (a,b,c )
+            line2 = line2 + "%02d ÷ %02d = %02d \t" % (a,b,c )
 
 
     # print(line1)
-    filename1 = line1 + '\n'
+    line1 = line1 + '\n'
     f1.write(line1)
-    filename2 = line2 + '\n'
+    line2 = line2 + '\n'
     f2.write(line2)
 # print("\n")
         #print("现在打印第{0}行-第{1}列-第{2}题\t\t\t".format(row,col,total))
